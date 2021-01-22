@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Family Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p id="firstp"> Family Book</p>
+<p>Here are Four members of our Family</p>
+<img id="album"src="https://tse2.mm.bing.net/th?id=OIP.ml0Uu4nIp1s81eevnNJ9bwHaHa&pid=Api&P=0&w=300&h=300">
+<div>
+<button type="button"onclick="nextimage()">Next</button>
+</div>
+<p id="reasontext"> Family is Life</p>
+<script>
+    var reasons=[
+"My DAD",
+"My MOM",
+"My BRO",
+"Me"
+];
+var images=[
+"https://cdn.myanimelist.net/s/common/uploaded_files/1460606128-772cd7a251031d7d3fd5f53f7033df4d.png",
+"https://i.pinimg.com/474x/fc/77/61/fc7761096fb740e90838586f2a544aec.jpg",
+"https://i.pinimg.com/originals/ac/5e/a4/ac5ea4b0f617f0f343ec905699cc08cb.jpg",
+"https://cdn.myanimelist.net/s/common/uploaded_files/1453823613-af9b764f682f0444aed3613f1c4e873e.jpeg"
+];
+var i=0;
+function nextimage(){
+document.getElementById("reasontext").innerHTML=reasons[i];
+document.getElementById("album").src=images[i];
+i++;
+}
+
+</script>
+</body>
+</html>
